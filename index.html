@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Circle Games</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link href='http://fonts.googleapis.com/css?family=Dosis:400,700,800' rel='stylesheet' type='text/css'>
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="js/jquery.transit.min.js"></script>
+	<script src="js/fastclick.js"></script>
+	<script src="js/timbre.js"></script>
+	<script src="js/Sound.js"></script>
+	<script src="js/Storage.js"></script>
+	<script src="js/Game.js"></script>
+	
+	<link rel="stylesheet" href="css/style.css" />
+	<script type="text/javascript">
+		$(function() {
+			FastClick.attach(document.body);
+		});
+		$(document).ready(function(){
+			var game = new Game();
+			game.start();
+		});
+	</script>
+</head>
+<body>
+	<div class="game"></div>
+	<div class="game_over">
+		<div class="content_text">
+			<div class="title">GAME OVER</div>
+			<div class="final_score"></div>
+			<a class="play_again">PLAY AGAIN</a>
+		</div>
+	</div>
+</body>
+</html>
